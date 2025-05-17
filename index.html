@@ -1,18 +1,363 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+<html dir="rtl" lang="ar">
 
-  <div class="parent">
-    <div>One</div>
-    <div>Two</div>
-    <div>Three</div>
-    <div>Four</div>
-  </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>أحمد - المبرمج الصغير</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.7;
+            text-align: center;
+            padding-bottom: 70px;
+        }
+
+        h1 {
+            width: 100%;
+            padding: 25px 15px;
+            background: blue;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        h1::after,
+        h1::before {
+            content: "";
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        h1::after {
+            bottom: -30px;
+            right: -30px;
+            width: 60px;
+            height: 60px;
+        }
+
+        h1::before {
+            top: -20px;
+            left: -20px;
+            width: 50px;
+            height: 50px;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #d1d5db, transparent);
+            margin: 20px 5%;
+        }
+
+        h2 {
+            width: 90%;
+            padding: 12px;
+            margin: 15px auto;
+            background: blue;
+            color: white;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            position: relative;
+        }
+
+        .who-im {
+            width: 90%;
+            margin: 0 auto 25px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .who-im p {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            font-size: 0.95rem;
+            border-right: 4px solid blue;
+            display: flex;
+            align-items: center;
+        }
+
+        .who-im p::before {
+            content: "•";
+            color: blue;
+            font-weight: bold;
+            margin-left: 8px;
+            font-size: 1.3rem;
+        }
+
+        .how {
+            width: 90%;
+            margin: 0 auto 30px;
+        }
+
+        .how p {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            font-size: 0.95rem;
+            text-align: right;
+            border-right: 4px solid blue;
+            line-height: 1.6;
+        }
+
+        .my-projeckt {
+            width: 90%;
+            margin: 0 auto 25px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .my-projeckt h2 {
+            width: 90%;
+            padding: 12px;
+            margin: 15px auto;
+            background: blue;
+            color: white;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            position: relative;
+        }
+
+        .my-projeckt a {
+            background-color: white;
+            color: black;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            font-size: 0.95rem;
+            border-right: 4px solid blue;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .my-projeckt a::before {
+            content: "•";
+            color: blue;
+            font-weight: bold;
+            margin-left: 8px;
+            font-size: 1.3rem;
+        }
+
+        .my-skills {
+            width: 90%;
+            margin: 0 auto 25px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .my-skills h2 {
+            width: 90%;
+            padding: 12px;
+            margin: 15px auto;
+            background: blue;
+            color: white;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            position: relative;
+        }
+
+        .my-skills p {
+            background-color: white;
+            color: black;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            font-size: 0.95rem;
+            border-right: 4px solid blue;
+            display: flex;
+            align-items: center;
+        }
+
+        .my-skills p::before {
+            content: "•";
+            color: blue;
+            font-weight: bold;
+            margin-left: 8px;
+            font-size: 1.3rem;
+        }
+
+        .social-contact {
+            width: 90%;
+            margin: 0 auto 25px;
+            text-align: center;
+        }
+
+        .social-contact h2 {
+            width: 90%;
+            padding: 12px;
+            margin: 15px auto;
+            background: blue;
+            color: white;
+            border-radius: 10px;
+            font-size: 1.2rem;
+        }
+
+        .social-contact a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 20px;
+            background-color: white;
+            color: black;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .tiktok {
+            border: 2px solid black;
+        }
+
+        .whatsapp {
+            border: 2px solid rgb(0, 255, 0);
+        }
+
+        .instagram {
+            border: 2px solid purple;
+        }
+
+        .tiktok:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .whatsapp:hover {
+            background-color: rgb(0, 255, 0);
+            color: white;
+        }
+
+        .instagram:hover {
+            background-color: purple;
+            color: white;
+        }
+
+        /* تحسينات للشاشات الصغيرة جداً */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.3rem;
+                padding: 15px 10px;
+            }
+
+            h2,
+            .my-skills h2,
+            .my-projeckt h2,
+            .social-contact h2 {
+                font-size: 1.1rem;
+                padding: 5px;
+                width: 100%;
+            }
+
+            .who-im p,
+            .how p,
+            .my-projeckt a,
+            .my-skills p {
+                font-size: 0.9rem;
+                padding: 5px;
+            }
+
+            .social-contact a {
+                display: inline-block;
+                width: 30%;
+                margin: 10px 5px;
+                font-size: 0.95rem;
+                margin: 10px 4px;
+                padding: 10px;
+            }
+        }
+
+        @media (min-width: 1042px) {
+            .social-contact a {
+                margin: 10px 5%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>أحمد - المبرمج الصغير</h1>
+
+    <hr>
+
+    <div class="who-im">
+        <h2>من أنا؟</h2>
+        <p>الاسم الكامل: أحمد حسام حرامي</p>
+        <p>مكان الولادة: سوريا/إدلب/معرة النعمان</p>
+        <p>مكان السكن: تركيا/هاتاي/الريحانية</p>
+        <p>العمر: 14 سنة</p>
+        <p>تاريخ الميلاد: 24.6.2011</p>
+        <p>الصف: سابع</p>
+        <p>الطول: 170 سم</p>
+        <p>الوزن: 67 كغ</p>
+    </div>
+
+    <hr>
+
+    <div class="how">
+        <h2>كيف بدأت في تعلم البرمجة؟</h2>
+        <p>
+            في سن 12 بدأت أفكر أن أصبح مبرمجاً وأتعلم البرمجة، وبدأت التعلم في سن 13 بلغات بسيطة على الهاتف. ومنذ فترة
+            أحضر لي والدي حاسوباً، ومنذ ذلك الحين بدأت في تعلم لغات الويب مثل HTML و CSS وأطمح لتطوير مهاراتي أكثر في
+            المستقبل.
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="my-skills">
+        <h2>مهاراتي</h2>
+        <p>1. HTML</p>
+        <p>2. CSS</p>
+        <p>3. JavaScript (قريباً)</p>
+        <p>4. PHP (قريباً)</p>
+    </div>
+
+    <hr>
+
+    <div class="my-projeckt">
+        <h2>مشاريعي</h2>
+        <a href="https://harmonious-dasik-d1c6d2.netlify.app/" target="_blank">مشروع رقم: 1</a>
+        <a href="https://legendary-croissant-6201ab.netlify.app/" target="_blank">مشروع رقم: 2</a>
+    </div>
+
+    <hr>
+
+    <div class="social-contact">
+        <h2>تواصل معي</h2>
+        <a href="https://www.tiktok.com/@.a7_md" target="_blank" class="tiktok">
+            <i class="fab fa-tiktok"></i> تيك توك
+        </a>
+
+        <a href="https://wa.me/905528668231" target="_blank" class="whatsapp">
+            <i class="fab fa-whatsapp"></i> واتساب
+        </a>
+
+        <a href="https://instagram.com/k.69hk" target="_blank" class="instagram">
+            <i class="fab fa-instagram"></i> إنستغرام
+        </a>
+    </div>
 
 </body>
+
 </html>
