@@ -1,0 +1,17 @@
+{
+  "adminOnlyMode": false,
+  "groups": {
+    "120363400644907114@g.us": {
+      "adminOnlyMode": false
+    }
+  },
+  "activeGames": {
+    "120363400644907114@g.us": {
+      "type": "assemble",
+      "word": "و ا ت س ا ب",
+      "answer": "واتساب",
+      "startTime": 1749322159039,
+      "active": false
+    }
+  }
+}
