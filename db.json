@@ -1,0 +1,27 @@
+{
+  "blacklist": [],
+  "violationsAdmins": [],
+  "visitors": {},
+  "groupRules": {},
+  "protections": {
+    "الادمن_فقط": true,
+    "الترحيب": false,
+    "مضاد_الاخفاء": false,
+    "مضاد_الروابط": false,
+    "مضاد_الروابط2": false,
+    "مضاد_الاسبام": false,
+    "مضاد_السب": true
+  },
+  "groups": {},
+  "settings": {
+    "120363400644907114@g.us": {
+      "مضاد_السب": false
+    }
+  },
+  "warnings": {
+    "7439286050845@lid": 2,
+    "112953848250423@lid": 5
+  },
+  "rules": {},
+  "titles": {}
+}
